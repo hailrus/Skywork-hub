@@ -1,0 +1,298 @@
+
+local Commandprompt = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Outline2 = Instance.new("Frame")
+local crop_3_2 = Instance.new("ImageButton")
+local minus = Instance.new("ImageButton")
+local ImageLabel = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local Outline = Instance.new("Frame")
+local add = Instance.new("ImageButton")
+local Outline_2 = Instance.new("Frame")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local EditorFrame = Instance.new("Frame")
+local Source = Instance.new("TextBox")
+local TextButton = Instance.new("TextButton")
+local TextLabel_4 = Instance.new("TextLabel")
+
+--Properties:
+
+Commandprompt.Name = "Command prompt"
+Commandprompt.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Commandprompt.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Commandprompt.ResetOnSpawn = false
+
+Main.Name = "Main"
+Main.Parent = Commandprompt
+Main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.138999999, 0, 0.349999994, 0)
+Main.Selectable = true
+Main.Size = UDim2.new(0, 617, 0, 244)
+
+Outline2.Name = "Outline 2"
+Outline2.Parent = Main
+Outline2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Outline2.BorderSizePixel = 0
+Outline2.Position = UDim2.new(0, 0, -0.121804908, 0)
+Outline2.Size = UDim2.new(0, 617, 0, 35)
+
+crop_3_2.Name = "crop_3_2"
+crop_3_2.Parent = Outline2
+crop_3_2.BackgroundTransparency = 1.000
+crop_3_2.Position = UDim2.new(0.948946536, 0, 0.0172413811, 0)
+crop_3_2.Size = UDim2.new(0, 19, 0, 20)
+crop_3_2.ZIndex = 2
+crop_3_2.Image = "rbxassetid://3926305904"
+crop_3_2.ImageColor3 = Color3.fromRGB(0, 0, 0)
+crop_3_2.ImageRectOffset = Vector2.new(524, 684)
+crop_3_2.ImageRectSize = Vector2.new(36, 36)
+
+minus.Name = "minus"
+minus.Parent = Outline2
+minus.BackgroundTransparency = 1.000
+minus.LayoutOrder = 3
+minus.Position = UDim2.new(0.908427835, 0, -0.0517241359, 0)
+minus.Size = UDim2.new(0, 25, 0, 25)
+minus.ZIndex = 2
+minus.Image = "rbxassetid://6764432408"
+minus.ImageColor3 = Color3.fromRGB(0, 0, 0)
+minus.ImageRectOffset = Vector2.new(100, 950)
+minus.ImageRectSize = Vector2.new(50, 50)
+
+ImageLabel.Parent = Outline2
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.00162074552, 0, 0.173403054, 0)
+ImageLabel.Selectable = true
+ImageLabel.Size = UDim2.new(0, 22, 0, 18)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=5040009517"
+ImageLabel.SliceScale = 2.000
+
+TextLabel.Parent = Outline2
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0632090792, 0, -0.00196312205, 0)
+TextLabel.Size = UDim2.new(0, 94, 0, 29)
+TextLabel.Font = Enum.Font.Code
+TextLabel.Text = "Command Prompt"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 16.000
+
+Outline.Name = "Outline"
+Outline.Parent = Main
+Outline.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Outline.BorderSizePixel = 0
+Outline.Position = UDim2.new(1, 0, -0.121804848, 0)
+Outline.Size = UDim2.new(0, 16, 0, 273)
+
+add.Name = "add"
+add.Parent = Outline
+add.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+add.BackgroundTransparency = 1.000
+add.Position = UDim2.new(-0.773124695, 0, -0.0109890113, 0)
+add.Rotation = 45.000
+add.Size = UDim2.new(0, 28, 0, 28)
+add.ZIndex = 2
+add.Image = "rbxassetid://3926307971"
+add.ImageColor3 = Color3.fromRGB(0, 0, 0)
+add.ImageRectOffset = Vector2.new(324, 364)
+add.ImageRectSize = Vector2.new(36, 36)
+
+Outline_2.Name = "Outline"
+Outline_2.Parent = Main
+Outline_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Outline_2.BorderSizePixel = 0
+Outline_2.Position = UDim2.new(0.0020000143, 0, 1, 0)
+Outline_2.Size = UDim2.new(0, 631, 0, 11)
+
+ImageLabel_2.Parent = Main
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.BorderSizePixel = 0
+ImageLabel_2.Position = UDim2.new(1, 0, -0.00295245065, 0)
+ImageLabel_2.Size = UDim2.new(0, 16, 0, 254)
+ImageLabel_2.Image = "rbxassetid://8665870953"
+ImageLabel_2.SliceScale = 2.000
+
+TextLabel_2.Parent = Main
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(-0.0129659632, 0, -0.0286885239, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.Font = Enum.Font.Roboto
+TextLabel_2.Text = "SKYWORK Hub [Version 1]"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 16.000
+
+TextLabel_3.Parent = Main
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(-0.0453808755, 0, 0.0245901644, 0)
+TextLabel_3.Size = UDim2.new(0, 200, 0, 55)
+TextLabel_3.Font = Enum.Font.Roboto
+TextLabel_3.Text = "<c> Enjoy using this"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 16.000
+
+EditorFrame.Name = "EditorFrame"
+EditorFrame.Parent = Main
+EditorFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+EditorFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+EditorFrame.BorderSizePixel = 0
+EditorFrame.ClipsDescendants = true
+EditorFrame.Position = UDim2.new(0, 0, 0.25, 0)
+EditorFrame.Selectable = true
+EditorFrame.Size = UDim2.new(0, 616, 0, 152)
+EditorFrame.ZIndex = 5
+
+Source.Name = "Source"
+Source.Parent = EditorFrame
+Source.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Source.BackgroundTransparency = 1.000
+Source.Position = UDim2.new(0.234123975, 0, 1.00386771e-07, 0)
+Source.Size = UDim2.new(0.197316289, 0, 0.0986840948, 0)
+Source.ZIndex = 5
+Source.Font = Enum.Font.Code
+Source.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+Source.PlaceholderText = "Command go here"
+Source.Text = ""
+Source.TextColor3 = Color3.fromRGB(255, 255, 255)
+Source.TextSize = 15.000
+Source.TextXAlignment = Enum.TextXAlignment.Left
+Source.TextYAlignment = Enum.TextYAlignment.Top
+
+TextButton.Parent = EditorFrame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.Position = UDim2.new(0.795121968, 0, 0.760869563, 0)
+TextButton.Size = UDim2.new(0, 126, 0, 44)
+TextButton.Font = Enum.Font.Code
+TextButton.Text = "Execute"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 14.000
+
+TextLabel_4.Parent = EditorFrame
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(-0.0631868169, 0, 0, 0)
+TextLabel_4.Size = UDim2.new(0, 220, 0, 15)
+TextLabel_4.Font = Enum.Font.Code
+TextLabel_4.Text = "C:\\Users\\SKYWORK>"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 16.000
+
+-- Scripts:
+
+local function SDMSUKC_fake_script() -- add.LocalScript 
+	local script = Instance.new('LocalScript', add)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Parent.Parent:Destroy()
+	end)
+end
+coroutine.wrap(SDMSUKC_fake_script)()
+local function JVROW_fake_script() -- Main.Dragify 
+	local script = Instance.new('LocalScript', Main)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(JVROW_fake_script)()
+local function WTDM_fake_script() -- EditorFrame.LocalScript 
+	local script = Instance.new('LocalScript', EditorFrame)
+
+	local player = game.Players.LocalPlayer
+	local char = player.Character
+	local box = script.Parent.Source
+	local submit = script.Parent.TextButton
+	
+		submit.MouseButton1Click:Connect(function()
+			if box.Text ~= "Katana" then
+			-- submit
+		else
+			loadstring(game:HttpGet(('https://raw.githubusercontent.com/hailrus/Skywork-hub/main/Katana%20script'),true))()
+		end
+	end)
+	
+	submit.MouseButton1Click:Connect(function()
+		if box.Text ~= "Gun" then
+			-- submit
+		else
+			loadstring(game:HttpGet(('https://raw.githubusercontent.com/hailrus/Skywork-hub/main/Gun'),true))()
+		end
+	end)
+
+    submit.MouseButton1Click:Connect(function()
+		if box.Text ~= "GunR15" then
+			-- submit
+		else
+			loadstring(game:HttpGet(('https://raw.githubusercontent.com/hailrus/Skywork-hub/main/Gun%20R15'),true))()
+		end
+	end)
+    
+     submit.MouseButton1Click:Connect(function()
+		if box.Text ~= "gunr15" then
+			-- submit
+		else
+			loadstring(game:HttpGet(('https://raw.githubusercontent.com/hailrus/Skywork-hub/main/Gun%20R15'),true))()
+		end
+	end)
+    
+	submit.MouseButton1Click:Connect(function()
+		if box.Text ~= "KatanaR15" then
+			-- submit
+		else
+			loadstring(game:HttpGet(('https://raw.githubusercontent.com/hailrus/Skywork-hub/main/Katana%20R15'),true))()
+		end
+	end)
+
+	submit.MouseButton1Click:Connect(function()
+		if box.Text ~= "katanar15" then
+			-- submit
+		else
+			loadstring(game:HttpGet(('https://raw.githubusercontent.com/hailrus/Skywork-hub/main/Katana%20R15'),true))()
+		end
+	end)
+
+end
+coroutine.wrap(WTDM_fake_script)()
